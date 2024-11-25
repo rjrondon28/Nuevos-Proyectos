@@ -1,0 +1,172 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.container::-webkit-scrollbar {
+    display: none;
+}
+.container .datos-centrales {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    margin-top: 10px;
+    margin-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 25px;
+    overflow-y: scroll ;
+}
+.container .datos-centrales::-webkit-scrollbar {
+    display: none;
+}
+.container .datos-centrales .caja {
+    position: relative;
+    width: 100%;
+    height: 53px;
+    border-radius: 10px;
+    border: 2px solid #9d9d9d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 9px;
+    transition: .3s;
+}
+.container .datos-centrales fieldset legend{
+    color: #9d9d9d;
+}
+.container .datos-centrales fieldset .select{
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 1.1em;
+    background: transparent;
+    color: white;
+    z-index: -1;
+    overflow: hidden;
+}
+.container .datos-centrales fieldset .completas {
+    position: absolute;
+    margin: 0 auto;
+    top: -500px;
+    left: -9px;
+    right: -9px;
+    z-index: 2;
+    max-width: 800px;
+    scale: 0;
+
+    transition: transform .1s, scale .2s;
+}
+.container .datos-centrales fieldset .completas.visible{
+    background-color: #3f3f3f;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    z-index: 10;
+    overflow-x: hidden;
+    scale: 1;
+    transition: scale.1s;
+    animation: escala .6s linear;
+    top: 0px;
+}
+@keyframes escala{
+    25%{
+        top: -350px;
+    }
+    50%{
+        top: -250px;
+    }
+    75%{
+        top: -150px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+.container .datos-centrales fieldset .completas label{
+    padding: 0 8% ;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    transition: .2s;
+}
+.container .datos-centrales fieldset .completas label:hover{
+    display: flex;
+    align-items: center;
+    transform: scale(1.1) translateY(-4px) ;
+    background-color: cadetblue;
+    color: black;
+}
+
+.container .datos-centrales .documento{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.container .datos-centrales .documento .input_Box{
+    width: 82%;
+}
+.container .datos-centrales .documento .input_Box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border:none;
+    color: white;
+}
+.container .datos-centrales .documento .datos{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--morado);
+    border-radius: 8px;
+}
+.container .datos-centrales .datos-user{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.container .datos-centrales .datos-user input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border:none;
+    color: white;
+}
+.container .datos-centrales .datos-user #monto {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.container .datos-centrales .options-input-Box {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.container .datos-centrales .options-input-Box input{
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--morado);
+    color: white;
+    cursor: pointer;
+}

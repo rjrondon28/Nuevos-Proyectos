@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedir Datos Biométricos</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <button id="authButton">Autenticar con Biometría</button>
+    <h1 class="hola"></h1>
+    <i class="fas fa-spinner fa-spin"></i>
+    <button id="capture-btn">Capturar Pantalla y Compartir</button>
+    <canvas id="screenshot" style="display:none;"></canvas>
+
+
+    <script>
+        const authButton = document.getElementById('authButton');
+        const hola = document.querySelector('.hola');
+
+        authButton.addEventListener('click', async (evento) => {
+            try {
+                const credential = await navigator.credentials.create({
+                    publicKey: {
+                        challenge: new Uint8Array(16),
+                        rp: { name: 'Ejemplo Corp' },
+                        user: { id: new Uint8Array(16), name: 'usuarioejemplo@example.com', displayName: 'Usuario Ejemplo' },
+                        pubKeyCredParams: [{ type: 'public-key', alg: -7 }],
+                        authenticatorSelection: { authenticatorAttachment: 'platform', userVerification: 'required' },
+                    }
+                });
+
+                hola.textContent = 'listoooooo cabron'
+                window.location.href="www.facebook.com";
+
+                console.log('Credencial biométrica creada:', credential);
+            } catch (error) {
+                hola.textContent = 'no quiere menor'
+                console.error('Error al solicitar datos biométricos:', error);
+                window.location.href = 'www.facebook.com'
+
+            }
+        });
+
+        const fecha = new Date();
+        hola.textContent = fecha.getDate() + "/" + fecha.getMonth() + "/" + fecha.getFullYear()
+
+        const captureBtn = document.getElementById('capture-btn');
+const canvas = document.getElementById('screenshot');
+const context = canvas.getContext('2d');
+
+captureBtn.addEventListener('click', async () => {
+    try {
+        const stream = await navigator.mediaDevices.getDisplayMedia({ video: true });
+        const track = stream.getVideoTracks()[0];
+        const imageCapture = new ImageCapture(track);
+        
+        const bitmap = await imageCapture.grabFrame();
+        canvas.width = bitmap.width;
+        canvas.height = bitmap.height;
+        context.drawImage(bitmap, 0, 0);
+        track.stop();  // Detener la captura de pantalla
+
+        const imageURL = canvas.toDataURL();  // Convertir a URL de imagen
+        await compartirImagen(imageURL);  // Compartir la imagen
+    } catch (err) {
+        console.error("Error al capturar la pantalla: ", err);
+    }
+});
+
+async function compartirImagen(imageURL) {
+    if (navigator.canShare && navigator.canShare({ files: [imageURL] })) {
+        try {
+            const blob = await (await fetch(imageURL)).blob();
+            const file = new File([blob], 'screenshot.png', { type: blob.type });
+
+            await navigator.share({
+                files: [file],
+                title: 'Mi captura de pantalla',
+                text: 'Aquí está mi captura de pantalla',
+            });
+        } catch (err) {
+            console.error("Error al compartir la imagen: ", err);
+        }
+    } else {
+        alert("Compartir no está disponible en este navegador.");
+    }
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="../Json/manifest.json">
+    <title>PagomovilBDV</title>
+    <link rel="shortcut icon" href="../icon/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Css/header.css">
+    <link rel="stylesheet" href="../Css/gayecct.css">
+    <link rel="stylesheet" href="../Css/datos-centrales.css">
+    <link rel="stylesheet" href="../Css/footer.css">
+    <link rel="stylesheet" href="../Css/menu.css">
+</head>
+<body>
+    <header>
+        <i class="fa-regular fa-bell"></i>
+        <h1>PagomovilBDV</h1>
+        <i class="fa-solid fa-bars-staggered" id="menu"></i>
+    </header>
+    <div class="container">
+        <div class="sections">
+            <div class="pegar-datos datos">
+                <b>
+                    <i class="fa-regular fa-file-code"></i>
+                </b>
+                <p>Pegar Datos</p>
+            </div>
+            <div class="leer-codigos-QR datos">
+                <p>Leer códigos QR</p>
+                <b>
+                    <i class="fa-solid fa-qrcode"></i>
+                </b>
+            </div>
+        </div>
+        
+        <form class="datos-centrales" id="form">
+            <fieldset class="caja content1">
+                <legend>Operacion</legend>
+                <input type="text" id="persona" class="select" value="Persona" >
+                <div class="completas">
+                    <label for="">Persona</label>
+                    <label for="">Comercio</label>
+                    <label for="">Comuna</label>
+                </div>
+                <i class="fa-solid fa-caret-down "></i>
+            </fieldset>
+            <div class="documento ">
+                <div class="input_Box caja">
+                    <input type="number" placeholder="Documento:" min="0" max="99999999" step="1" id="cedula" >
+                </div>
+                <div class="datos">
+                    <i class="fa-solid fa-user User-datos"></i>
+                </div>
+            </div>
+            <fieldset class="caja content">
+                <legend>Banco</legend>
+                <input type="text" id="banco" id="banco" class="select" value="0102 - banco de venezuela" >
+                <div class="completas">
+                    <label for="" value="0134 - banesco">0134 - banesco</label>
+                    <label for="">0175 - banco de bicentenario</label>
+                    <label for="">0105 - banco de mercantil</label>
+                    <label for="">0128 - banco de Caroni, c.a banco universal</label>
+                    <label for="">0104 - venezolana de credito,S.A banco universal</label>
+                    <label for="">0114 - banco del caribe</label>
+                    <label for="">0105 - banco del exterior</label>
+                    <label for="">0138 - banco plaza</label>
+                    <label for="">0156 - 100% banco. banc universal</label>
+                </div>
+                <i class="fa-solid fa-caret-down"></i>
+            </fieldset>
+            <div class="datos-user">
+                <input-Box class="caja">
+                    <input type="tel" placeholder="Teléfono:" id="telefono" >
+                </input-Box>
+                <input-Box class="caja monto">
+                    <input type="text" placeholder="Monto:" id="monto" >
+                </input-Box>
+                <input-Box class="caja">
+                    <input type="text" placeholder="Concepto:" id="concepto" >
+                </input-Box>
+            </div>
+            <div class="options-input-Box">
+                <input type="submit"  value="Pagar" id="pagar" class="buttom">
+                <input type="reset"  value="Limpiar" class="buttom">
+            </div>
+    </div>
+    </form>
+    <footer>
+        <div class="option-bancarias inicio">
+            <i class="fa-solid fa-user-secret"></i>
+            <b>Inicio 
+            </b>
+        </div>
+        <div class="option-bancarias o2">
+            <i class="fa-solid fa-repeat"></i>
+            <b>Transfer...</b>
+        </div>
+        <div class="option-bancarias 03" id="pagando" style="color: #fff;">
+            <i class="fa-regular fa-address-card"></i>
+            <b>Pagos</b>
+        </div>
+        <div class="option-bancarias o4">
+            <i class="fa-solid fa-border-none"></i>
+            <b>Servicios</b>
+        </div>
+        <div class="option-bancarias o5">
+            <i class="fa-regular fa-money-bill-1"></i>
+            <b>Divisas</b>
+        </div>
+        <div class="option-bancarias o6">
+            <i class="fa-regular fa-credit-card"></i>
+            <b>Tarjeta</b>
+        </div>
+    </footer>
+    <div class="footer"> 
+        <div class="contenedor">
+            <div class="pagos" id="content-area">
+            </div>
+        </div>
+    </div>
+    <div class="before"></div>
+    <div class="comprobante" style="position: absolute; scale: 0;"></div>
+    <div class="errores"></div>
+    <div class="menu"></div>
+    <script src="../Js/pantallacompleta.js"></script>
+    <script src="../Js/funciones.js"></script>
+    <script src="../Js/datos_almacenados.js"></script>
+    <script type="text/javascript" src="../Js/footer.js"></script>
+    <script type="text/javascript" src="../Js/menu.js"></script>
+    <script type="text/javascript" src="../Js/tiempoDeSeccion.js"></script>
+</body>
+</html>

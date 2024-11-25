@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reconocimiento_Facial | RjRondon28</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="camara.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+	<div class="box">
+		<form action="">
+            <h2>login</h2>
+			<div class="input_Box">
+				<span></span>
+				<input type="text" placeholder="Username">
+			</div>
+			<div class="input_Box">
+				<span></span>
+				<input type="password" placeholder="Password">
+			</div>
+			<div class="forma_login camara_box camara_login">
+				<span></span>
+				<input class="camera" type="file" capture="camera" accept="image/" id="camara_login">
+				<div class="Box_camera">
+					<i class="fa-solid fa-camera detection"></i>
+				</div>
+			</div>
+			<div class="input_Box">
+				<input type="submit" value="Sing In">
+			</div>
+			<div class="group">
+				<a href="">forget password</a>
+				<a href="register.html">Sing Up</a>
+			</div>
+		</form>
+	</div>
+	<script src="funcionalidad.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.banner-2{
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+.banner-2 p{
+    margin-left: 20px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+.banner-2 .sections{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-around;
+    align-items: start;
+}
+.banner-2 .sections section{
+    width: 110px;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #424242;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.banner-2 .sections section i{
+    font-size: 1.7em;
+}
+.banner-2 .sections section b{
+    font-size: .7em;
+}

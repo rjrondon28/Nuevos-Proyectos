@@ -1,0 +1,64 @@
+.banner-3{
+    position: absolute;
+    background-color: #1f1f1f;
+    width: 100%;
+    bottom: 55px;
+    left: 0;
+    top: 325px;
+    border-radius: 25px 25px 0 0;
+    overflow-x: hidden;
+}
+.banner-3::-webkit-scrollbar{
+    width: 2px;
+}
+.banner-3 .footers{
+    position: fixed;
+    background-color: #1f1f1f;
+    border-radius: 25px;
+    width: 100%;
+    height: 45px;
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+}
+.banner-3 .footers a{
+    text-decoration: none;
+    color: var(--morado);
+    text-shadow: 0 0 1px #ff002b;
+}
+.banner-3 .historico-operaciones{
+    margin-top: 40px;
+    padding: 14px;
+}
+.banner-3 .historico-operaciones p{
+    color: #dad2d2;
+    font-weight: 700;
+}
+.banner-3 .historico-operaciones .historico-fisico{
+    padding: 10px;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-3 .historico-operaciones .historico-fisico b{
+    width: 10%;
+}
+.banner-3 .historico-operaciones .historico-fisico b i{
+    font-size: 1.9em;
+}
+.banner-3 .historico-operaciones .historico-fisico p{
+    width: 45%;
+    font-weight: 500;
+}
+.banner-3 .historico-operaciones .historico-fisico span{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: .09em;
+}

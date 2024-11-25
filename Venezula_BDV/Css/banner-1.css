@@ -1,0 +1,91 @@
+.banner-1{
+    margin-top: 50px ;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    border-bottom: 1px solid #524c4c;
+}
+.banner-1 .circle-center{
+    width: 10px;
+    height: 10px;
+    background-color: var(--morado);
+    margin-top: 15px;
+    border-radius: 50%;
+}
+.banner-1 .contenedor-saldo{
+    background-color: var(--morado);
+    border-radius: 28px;
+    width: 95%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-1 .contenedor-saldo .cuenta{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px 10px ;
+}
+.banner-1 .contenedor-saldo .cuenta b{
+    font-weight: 200;
+}
+.banner-1 .contenedor-saldo .cuenta p{
+    font-weight: 1000;
+    letter-spacing: .1em;
+}
+.banner-1 .contenedor-saldo .cuenta p span {
+    font-size: 1.1em;
+}
+.banner-1 .contenedor-saldo .options-cuenta{
+    position: relative;
+    width: 55%;
+    padding: 0px 20px ;
+}
+.banner-1 .contenedor-saldo .options-cuenta .options{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    right: 5px;
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.banner-1 .contenedor-saldo .options-cuenta .options .op{
+    font-size: 1.4em;
+    display: flex;
+    cursor: pointer;
+    padding: 1px;
+}
+.banner-1 .contenedor-saldo .options-cuenta .options .n1 {
+    border: 2.5px solid;
+    border-radius: 50%;
+    padding: 1px;
+    margin-top: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-1 .contenedor-saldo .options-cuenta .movientos-cuenta{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 18px;
+    bottom: 10px;
+    cursor: pointer;
+    gap: 3px;
+    
+}
+.banner-1 .contenedor-saldo .options-cuenta .movientos-cuenta p{
+    font-weight: 200;
+    font-size: .9em;
+}

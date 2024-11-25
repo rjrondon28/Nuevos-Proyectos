@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almacenar en localStorage</title>
+</head>
+<body>
+    <input type="text" id="nombreInput" placeholder="Nombre">
+    <input type="email" id="emailInput" placeholder="Email">
+    <input type="number" id="edadInput" placeholder="Edad">
+    <button onclick="guardarDatos()">Guardar Datos</button>
+
+    <script>
+        function guardarDatos() {
+            // Obtener los valores de los campos de entrada
+            const nombre = document.getElementById('nombreInput').value;
+            const email = document.getElementById('emailInput').value;
+            const edad = document.getElementById('edadInput').value;
+
+            // Crear un objeto para almacenar los datos
+            const datos = {
+                nombre: nombre,
+                email: email,
+                edad: edad
+            };
+
+            // Almacenar el objeto en localStorage
+            localStorage.setItem('datos', JSON.stringify(datos));
+
+            // Redirigir a la página que muestra los datos
+            window.location.href = 'segunda_pagina.html';
+        }
+    </script>
+</body>
+</html>

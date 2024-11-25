@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Datos desde localStorage</title>
+</head>
+<body>
+    <p>Nombre: <span id="nombreSpan"></span></p>
+    <p>Email: <span id="emailSpan"></span></p>
+    <p>Edad: <span id="edadSpan"></span></p>
+
+    <script>
+        // Recuperar los datos del localStorage
+        const datos = JSON.parse(localStorage.getItem('datos'));
+
+        // Mostrar los datos en los elementos <span>
+        document.getElementById('nombreSpan').textContent = datos.nombre;
+        document.getElementById('emailSpan').textContent = datos.email;
+        document.getElementById('edadSpan').textContent = datos.edad;
+    </script>
+</body>
+</html>

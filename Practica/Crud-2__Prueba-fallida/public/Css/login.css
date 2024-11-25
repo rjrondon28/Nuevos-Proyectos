@@ -1,0 +1,171 @@
+:root{
+	--colorPink: rgb(200, 99, 181);
+	--font: 'Poppins', sans-serif;
+	--colorBlue: rgb(66, 91, 154);
+	--colorWhite: rgb(204, 211, 237);
+	--colorNithe:rgb(20, 22, 47);
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body .body{
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(https://wallpapercat.com/w/full/1/d/3/5818397.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+form{
+	width: 50%;
+	max-width: 400px;
+	padding: 23px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, .01);
+	backdrop-filter: blur(16px);
+	gap: 30px;
+	color: var(--colorWhite);
+	filter: drop-shadow(4px 4px 4px var(--colorPink));
+	transition: .3s;
+}
+form h1{
+	font-family: var(--font);
+	color: var(--colorNithe);
+	letter-spacing: .1em;
+	font-weight: bold;
+	filter: drop-shadow(2px -2px 4px var(--colorPink));
+}
+form .boxInput{
+	position: relative;
+	width: 100%;
+	height: 35px;
+	padding: 0 10px;
+	border: 1.2px solid var(--colorBlue);
+	border-radius: 10px;
+	cursor: pointer;
+}
+form .boxInput input{
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: transparent;
+	color: white;
+	font-family: var(--font);
+	font-weight: bold;
+	border-radius: 10px;
+	cursor: pointer;
+}
+form .boxInput label{
+	position: absolute;
+	left: 30px;
+	font-family: var(--font);
+	font-weight: bold;
+	color: var(--coloFont);
+	transform: translateY(4px);
+	transition: .3s ;
+	cursor: pointer;
+}
+form .boxInput input:focus ~ label,
+form .boxInput input:valid ~ label{
+	transform: translateY(-30px) translateX(-20px) scale(1.1);
+	filter: drop-shadow(2px -2px 4px var(--colorPink));
+}
+form .boxInput i{
+	position: absolute;
+	right: 10px;
+	color: var(--colorPink);
+	top: 10px;
+	filter: drop-shadow(3px 3px 2px var(--colorNithe));
+	transition: .3s;
+}
+form .boxInput input:focus ~ i{
+	color: var(--colorBlue);
+	top: -25px
+}
+form .boxChekec{
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	margin-right: 40px;
+	color: #000;
+}
+form .boxChekec i{
+	font-size: 1.4em;
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 3px;
+	transition: .3s;
+	cursor: pointer;
+}
+form .boxChekec .fa-eye-slash{
+	background: var(--colorPink);
+}
+form button{
+	width: 30%;
+	height: 35px;
+	background: var(--colorPink);
+	border-radius: 10px;
+	border: 1px solid var(--colorWhite);
+	font-family: var(--font);
+	font-weight: bold;
+	margin-bottom: 20px ;
+}
+form button:hover{
+	animation: salto .8s;
+}
+@keyframes salto{
+	0%{
+		transform: translateY(2px) scaleX(1.3);
+		height: 27px;
+	}
+	25%{
+		transform: translateY(-2px) scaleY(1.1);
+		width: 28%;
+		font-size: .9em;
+	}
+	30%{
+		transform: translateY(-5px) scaleY(1.2);
+		width: 25%;
+		font-size: .8em;
+	}
+	55%{
+		transform: translateY(-9px) scaleY(1.3);
+		width: 23%;
+		font-size: .7em;
+	}
+	100%{
+		transform: translateY(0px) scaleX(1);
+		width: 30%;
+		height: 35px;
+		font-size: 1em;
+	}
+}
+form .registre{
+	position: absolute;
+	bottom: 5px;
+	right: 40px;
+	font-family: var(--font);
+	font-weight: bold;
+	color: var(--colorNithe);
+	transition: .3s;
+}
+form .registre:hover{
+	text-decoration: underline;
+}
+form .registre:hover a{
+	text-decoration: none;
+	color: var(--colorPink);
+	filter: drop-shadow(2px 2px 4px var(--colorNithe));
+}

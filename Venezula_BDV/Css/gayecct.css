@@ -1,0 +1,45 @@
+.sections{
+    width: 93%;
+    max-width: 2000px;
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sections .datos{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.sections .datos b {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--morado);
+}
+.sections .datos b i{
+    font-size: 1.6em;
+}
+.sections .datos p{
+    font-size: 1em;
+    font-weight: 500;
+}
+.errores{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    bottom: 70px;
+    background-color: var(--morado);
+    width: 60%;
+    max-width: 700px;
+    padding: 7px;
+    border-radius: 5px;
+    margin: 0 auto;
+    scale: 0;
+    transition: .3s;
+}
