@@ -1,5 +1,5 @@
-export const Button = ({type})=>{
+export const Button = ({type,valor})=>{
 	return (
-		<button type= {type} ></button>
+		<button type= {type} > {valor} </button>
 	);
 }
