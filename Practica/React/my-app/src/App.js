@@ -1,19 +1,24 @@
 import {Th} from './Th'
 import {Td} from './Td'
+import {TdAccion} from './TdAccion'
 
 function App( {stilo, usuario} ) {
-  const array = [];
-  for (var i = 0; i < usuario; i++) {
-    array.push(
-      <tr key={i} >
-          <Td datos="Ricardo"/>
-          <Td datos="Admin"/>
-          <Td datos="Ais"/>
-          <Td datos="28/11/1999"/>
-          <Td datos="Bitacora"/>
+  let i = 0;
+  const array = []
+    usuario.forEach(elementos =>{
+      i = i + 1;
+      array.push(
+        <tr key={i} >
+          <Td datos= {elementos.nombre} />
+          <Td datos= {elementos.grupo} />
+          <Td datos={elementos.sede}/>
+          <Td datos={elementos.fecha_h}/>
+          <TdAccion />
         </tr>
-      );
-  }
+
+        );
+    })
+
   return (
 
     <table border={stilo}>

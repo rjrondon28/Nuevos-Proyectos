@@ -10,7 +10,22 @@ root.render(
   <>
     <Registro href="google.com" nombre="Registro" />
     <Filtro />
-    <App stilo="border" usuario= {6} />
+    <App stilo="border" usuario= { [{nombre:"Ricardo",
+                                        grupo: "Admin",
+                                        sede:"Ais",
+                                        fecha_h:"16/04/2001/1999" },
+                                        {nombre:"Jose",
+                                        grupo: "Super Admin",
+                                        sede:"Agronomia",
+                                        fecha_h:"16/04/2001" },
+                                        {nombre:"Pedro",
+                                        grupo: "Operador",
+                                        sede:"Veterinaria",
+                                        fecha_h:"29/11/1977" },
+                                        {nombre:"Manuel",
+                                        grupo: "Estudiante",
+                                        sede:"Medicina",
+                                        fecha_h:"08/09/2002" }] } />
   </>
 );
 
