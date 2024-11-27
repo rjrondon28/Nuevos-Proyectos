@@ -5,9 +5,20 @@
 }
 body{
 	min-height: 100vh;
-	min-width: 100vw;
+	width: 100vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+#root{
+	min-width: 300px;
+	width: 40%;
+	max-width: 450px;
+}
+h1{
+	text-align: center;
+	font-family: sans-serif;
+	margin-bottom: 10px;
+	text-decoration: underline;
 }

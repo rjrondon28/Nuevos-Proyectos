@@ -13,7 +13,7 @@ root.render(
     <App stilo="border" usuario= { [{nombre:"Ricardo",
                                         grupo: "Admin",
                                         sede:"Ais",
-                                        fecha_h:"16/04/2001/1999" },
+                                        fecha_h:"16/04/1999" },
                                         {nombre:"Jose",
                                         grupo: "Super Admin",
                                         sede:"Agronomia",

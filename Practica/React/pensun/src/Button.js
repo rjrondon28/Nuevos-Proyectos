@@ -1,5 +1,6 @@
-export const Button = ({type,valor})=>{
+import './button.css'
+export const Button = ({type,valor,clas})=>{
 	return (
-		<button type= {type} > {valor} </button>
+		<button className={clas} type= {type} > {valor} </button>
 	);
 }

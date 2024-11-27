@@ -1,7 +1,10 @@
 import {Option} from './Options'
-export const Select = ({select})=>{
+import './select.css'
+
+export const Select = ({namess,placeholder,campo})=>{
 	return (
-		<select name={select}  >
+		<select name={namess}  >
+			<Option campo={campo} value={campo} defaul/>
 			<Option value="Valor 1" />
 		</select>
 	);

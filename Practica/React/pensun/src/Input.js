@@ -1,5 +1,6 @@
-export const Input = ({type}) =>{
+import './input.css'
+export const Input = ({type,placeholderr}) =>{
 	return (
-		<input type={type} />
+		<input type={type} placeholder={placeholderr} required/>
 	);
 }
