@@ -1,0 +1,12 @@
+.filtro{
+    position: absolute;
+    top: 140px;
+    width: 60%;
+    height: 30px;
+    border: 2px solid #5277ff;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}

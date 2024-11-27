@@ -1,5 +1,5 @@
-export const Span = ({nombre})=>{
+export const Span = ({nombre,clas})=>{
 	return(
-		<span>{nombre}</span>
+		<span className={clas}>{nombre}</span>
 	);
 }

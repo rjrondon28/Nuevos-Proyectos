@@ -1,0 +1,22 @@
+.accion{
+    position: relative;
+    display: flex;
+    
+    gap: 30px;
+}
+.accion .action {
+
+    text-decoration: none;
+    color: #000;
+    width: 20px;
+    height: 30px;
+    scale: 1;
+}
+.accion .action span{
+    transform: translateY(20px) scaleX(0);
+    font-weight: bold;
+    background: #b2b2b2;
+}
+.accion .action span:hover{
+    transform: translateY(20px) scaleX(0);
+}

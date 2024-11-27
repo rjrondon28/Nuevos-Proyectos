@@ -8,7 +8,6 @@ export const Form = ({action,method})=>{
 	return (
 		<form  method={method} >
 			<InputBox type= "text" clase={faLaptopFile} placeholderr="Semestre" />
-			<InputSelect campo="N°" names="select"  clase={faSquarePollHorizontal}/>
 			<InputBox type= "text" clase={faLaptopCode} placeholderr="Codigo de Materia"/>
 			<InputBox type= "text" clase={faPersonChalkboard} placeholderr="Asignatura"/>
 			<InputBox type= "text" clase={faBookOpenReader} placeholderr="Horas Teoricas"/>

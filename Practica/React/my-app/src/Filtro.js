@@ -1,8 +1,9 @@
+import './inputfiltro.css'
 import {Input} from './Input'
-export const Filtro = () =>{
+export const Filtro = ({clas}) =>{
 	return (
 		<div className ="filtro">
-      <Input type="search" placeholder="Filtra por Grupo,Sede,Usuario"/>
+			<Input clas={clas} type="search" placeholder="Filtrar por Grupo,Sede,Usuario"/>
     </div>
 	);
-}
+}	

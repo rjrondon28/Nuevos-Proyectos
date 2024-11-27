@@ -13,7 +13,7 @@ function App( {stilo, usuario} ) {
           <Td datos= {elementos.grupo} />
           <Td datos={elementos.sede}/>
           <Td datos={elementos.fecha_h}/>
-          <TdAccion />
+          <TdAccion clas="accion" />
         </tr>
 
         );

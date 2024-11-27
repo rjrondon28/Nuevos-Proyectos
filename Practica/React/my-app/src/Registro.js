@@ -1,5 +1,6 @@
-export const Registro = ( {href,nombre} ) =>{
+import './accion.css'
+export const Registro = ( {clas,href,nombre} ) =>{
 	return (
-		<a href={href} > {nombre} </a>
+		<a className={clas} href={href} > {nombre} </a>
 	);
 };

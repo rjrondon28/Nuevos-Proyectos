@@ -1,7 +1,7 @@
 import {Accion} from './Accion'
-export const TdAccion = ()=>{
+export const TdAccion = ({clas})=>{
 	return (
-		<td>
+		<td className={clas}> 
 			<Accion accion="#" nombre="Bitacora"/>
 			<Accion accion="#" nombre="Detalles"/>
 			<Accion accion="#" nombre="Status"/>

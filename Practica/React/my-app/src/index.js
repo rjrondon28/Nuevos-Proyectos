@@ -8,8 +8,8 @@ import {Filtro} from './Filtro'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <Registro href="google.com" nombre="Registro" />
-    <Filtro />
+    <Registro clas="register" href="google.com" nombre="Registro" />
+    <Filtro clas="filtrar" />
     <App stilo="border" usuario= { [{nombre:"Ricardo",
                                         grupo: "Admin",
                                         sede:"Ais",
