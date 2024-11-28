@@ -13,7 +13,7 @@ body{
 }
 #root{
 	min-width: 300px;
-	width: 40%;
+	width: 100%;
 	max-width: 450px;
 }
 h1{

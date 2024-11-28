@@ -7,7 +7,7 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <h1>Registro de Pensus</h1>
+    <h1>Registro de Pensum</h1>
     <App />
   </>
 );

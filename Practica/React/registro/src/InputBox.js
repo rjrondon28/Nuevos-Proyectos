@@ -6,7 +6,6 @@ export const InputBox = ({type,clase,placeholderr})=>{
         <div className="InputBox">
             <Input type= {type} placeholderr={placeholderr} />
             <FontAwesomeIcon icon={clase} />
-
         </div>
     );
 }
