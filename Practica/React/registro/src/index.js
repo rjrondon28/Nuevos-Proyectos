@@ -7,7 +7,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
     <h1>Areas</h1>
-    <App />
+    <App method="POST" />
   </>
 );
 

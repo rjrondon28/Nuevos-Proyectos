@@ -18,4 +18,4 @@ export const Form = ({action,method})=>{
 			<ButtomBox valor1="Enviar" valor2="volver"/>
 		</form>
 	);
-}
+}	 
