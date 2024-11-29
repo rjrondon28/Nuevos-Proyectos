@@ -12,13 +12,15 @@
 .table thead{
 	background: #5277ff;
 	height: 35px;
-	width: ;
+}
+.table tbody{
+	height: 30px;
 }
 .table tbody tr{
 	transition: .4s;
 }
 .table tbody tr:hover{
-	background: rgba(255, 255, 255, .5);
+	background: rgba(255, 255, 255, 0.323);
 }
 .table tbody .action{
 	display: flex;
@@ -27,11 +29,13 @@
 }
 .table tbody .action a{
 	text-decoration: none;
-	color: red;
+	color: rgb(91, 117, 210);
 	filter: drop-shadow(1px 1px 2px #000);
+	margin-top: 4%;
 }
 .table tbody .action a:hover{
-	color: #5277ff;
+	filter: drop-shadow(1px 1px 2px #b0b0b0);
+	color: #0037ff;
 }
 .salir{
 	position: absolute;
@@ -39,9 +43,10 @@
 	right: -10px;
 	font-size: 1.4em;
 	cursor: pointer;
-	color: red;
-	filter: drop-shadow(1px 1px 4px #000);
+	color: rgb(200, 200, 200);
+	filter: drop-shadow(1px 1px 2px #000000);
 }
 .salir:hover{
-	color: purple;
+	color: rgb(21, 20, 21);
+	filter: drop-shadow(1px 1px 2px #ffffff);
 }
