@@ -1,5 +1,5 @@
-import {Form} from './Form'
-import {TablaCarrerasAgg} from './moleculas/TablaCarrerasAgg'
+import {Form} from './Form/Form'
+import {TablaCarrerasAgg} from './TablaCarreraAgg/TablaCarrerasAgg'
 import {useState} from 'react'
 export const App = () =>{
     const [boton, setBoton] = useState(false)
