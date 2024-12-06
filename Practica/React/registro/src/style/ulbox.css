@@ -9,6 +9,16 @@
     padding: 3px 8px 3px 8px;
     cursor: pointer;
 }
+.UlBox p{
+    color: #909090;
+    font-weight: 600;
+    font-family: sans-serif;
+    width: 100%;
+    transition: .3s;
+}
+.UlBox p:hover{
+    color: #000;
+}
 .UlBox  svg{
     position: absolute;
     right: 6px;

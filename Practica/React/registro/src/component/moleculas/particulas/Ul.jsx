@@ -1,5 +1,5 @@
 import { Li } from "./micro-particulas/Li";
-import styles from '../../../style/ul.css'; 
+import '../../../style/ul.css'; 
 export const Ul = ({valorActive}) =>{
     return (
         <ul className = {valorActive ? 'listactive' : 'lista' } >

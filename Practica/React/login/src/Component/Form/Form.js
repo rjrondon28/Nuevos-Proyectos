@@ -1,7 +1,7 @@
-import { InputBox } from './moleculas/InputBox';
-import {ButtomBox} from './moleculas/ButtomBox'
+import { InputBox } from '../ImputBox/InputBox';
+import {ButtomBox} from '../ButtomBox/ButtomBox'
+import './form.css'
 import {faLock,faUser	} from '@fortawesome/free-solid-svg-icons'
-import '../style/form.css'
 
 export const Form = ({action,method})=>{
 

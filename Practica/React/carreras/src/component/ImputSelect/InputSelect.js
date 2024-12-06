@@ -1,6 +1,6 @@
-import {Select} from './particulas/Select'
+import {Select} from '../Select/Select'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import '../../style/inputselect.css'
+import './inputselect.css'
 
 export const InputSelect = ({clase, names,campo}) =>{
     return (

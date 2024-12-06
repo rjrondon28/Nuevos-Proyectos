@@ -1,5 +1,5 @@
-import {Option} from './micro-particulas/Options'
-import '../../../style/select.css'
+import {Option} from '../Options/Options'
+import './select.css'
 
 export const Select = ({namess,placeholder,campo})=>{
 	return (

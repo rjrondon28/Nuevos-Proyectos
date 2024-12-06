@@ -1,5 +1,5 @@
-import {Input} from './Particulas/Input'
-import '../../style/inputbox.css'
+import {Input} from '../Imput/Input'
+import './inputbox.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 export const InputBox = ({type,clase,placeholderr})=>{
     return (
