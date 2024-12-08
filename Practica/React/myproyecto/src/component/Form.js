@@ -1,5 +1,5 @@
-import { InputBox } from '../ImputBox/InputBox';
-import {ButtomBox} from '../ButtomBox/ButtomBox'
+import { InputBox } from './ImputBox/InputBox';
+import {ButtomBox} from './ButtomBox/ButtomBox'
 import './form.css'
 import {faLaptopFile,faLaptopCode,faClipboard,faPhone,faMapLocationDot,faEnvelope} from '@fortawesome/free-solid-svg-icons'
 export const Form = ({action,method})=>{

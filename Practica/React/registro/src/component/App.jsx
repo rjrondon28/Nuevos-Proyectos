@@ -1,4 +1,4 @@
-import {Form} from './Form/Form'
+import {Form} from './Form'
 import {TablaCarrerasAgg} from './TablaCarreraAgg/TablaCarrerasAgg'
 import {useState} from 'react'
 export const App = () =>{

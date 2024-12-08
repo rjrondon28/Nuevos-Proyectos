@@ -1,7 +1,7 @@
-import { InputBox } from '../ImputBox/InputBox';
-import {ButtomBox} from '../ButtomBox/ButtomBox'
-import { UlBox } from '../UlBox/UlBox';
-import { InputCarreras } from '../ImputCarrera/InputCarreras';
+import { InputBox } from './ImputBox/InputBox';
+import {ButtomBox} from './ButtomBox/ButtomBox'
+import { UlBox } from './UlBox/UlBox';
+import { InputCarreras } from './ImputCarrera/InputCarreras';
 import {faLaptopFile,faLaptopCode,faPersonChalkboard,faBoxesPacking	} from '@fortawesome/free-solid-svg-icons'
 import './form.css'
 

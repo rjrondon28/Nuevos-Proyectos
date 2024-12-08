@@ -1,7 +1,7 @@
 import './form.css';
-import { InputBox } from '../ImputBox/InputBox';
-import {InputSelect} from '../ImputSelect/InputSelect'
-import {ButtomBox} from '../ButtonBox/ButtomBox'
+import { InputBox } from './ImputBox/InputBox';
+import {InputSelect} from './ImputSelect/InputSelect'
+import {ButtomBox} from './ButtonBox/ButtomBox'
 import {faUser,faLaptopFile,faBookOpenReader,faSquarePollHorizontal,faPersonChalkboard} from '@fortawesome/free-solid-svg-icons'
 
 export const Form = ({action,method})=>{

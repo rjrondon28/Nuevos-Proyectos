@@ -1,5 +1,5 @@
-import { InputBox } from '../ImputBox/InputBox';
-import {ButtomBox} from '../ButtomBox/ButtomBox'
+import { InputBox } from './ImputBox/InputBox';
+import {ButtomBox} from './ButtomBox/ButtomBox'
 import './form.css'
 import {faLock,faUser	} from '@fortawesome/free-solid-svg-icons'
 
